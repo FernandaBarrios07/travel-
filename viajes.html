@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel+ | Viajes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <style>
+        .navbar {
+            background: rgba(0, 0, 0, 0.8);
+        }
+        .navbar-nav .nav-link {
+            color: white !important;
+            font-weight: bold;
+        }
+        .nav-item:hover .nav-link {
+            color: #ec46ac !important;
+        }
+        .section {
+            padding: 80px 0;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 3rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        .underline {
+            width: 80px;
+            height: 5px;
+            background-color: #00b894;
+            border: none;
+            margin: 15px auto;
+        }
+        .card {
+            border: 2px solid #008f68;
+            border-radius: 15px;
+            padding: 30px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .card h3 {
+            font-size: 1.7rem;
+            font-weight: bold;
+            color: #333;
+        }
+        .card p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+        .large-text {
+            font-size: 1.4rem;
+        }
+        @media (max-width: 768px) {
+            .section h2 {
+                font-size: 2rem;
+            }
+            .card h3 {
+                font-size: 1.5rem;
+            }
+            .card p {
+                font-size: 1rem;
+            }
+            .large-text {
+                font-size: 1.2rem;
+            }
+        }
+        .social-icons a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white" href="index.html">Travel+</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Página de Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="promociones.html">Promociones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="registro.html">Registrar Viaje</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contáctanos</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Más</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a class="nav-link" href="about.html">Acerca de</a></li>
+                            <li class="nav-item"><a class="nav-link" id="nav-perfumes" href="http://aurafragance.infy.uk/">Perfumes</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lenguaje</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="viajes.html" onclick="changeLanguage('es')">Spanish</a></li>
+                            <li><a class="dropdown-item" href="viajesE.html" onclick="changeLanguage('en')">English</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="section">
+        <div class="container">
+            <h2>VIAJES</h2>
+            <hr class="underline">
+            <p class="text-center text-muted large-text">Explora los destinos más fascinantes del mundo con nuestras ofertas exclusivas. <br>
+                Desde las vibrantes ciudades europeas hasta las exóticas playas del Caribe, te ofrecemos experiencias de viaje inolvidables con paquetes diseñados para todos los gustos y presupuestos. <br>
+                ¡Descubre, viaja y vive nuevas aventuras con Travel+!</p>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card text-center">
+                        <img src="img/europa.jpg" alt="Europa">
+                        <h3>🌍 Europa</h3>
+                        <p>✈️París, Francia - La ciudad del amor y la Torre Eiffel.<br>
+                            ✈️Roma, Italia - Historia y arte en cada rincón. <br>
+                            ✈️Barcelona, España - Arquitectura, playa y cultura vibrante. <br>
+                            ✈️Atenas, Grecia - La cuna de la civilización occidental.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card text-center">
+                        <img src="img/america.jpeg" alt="América">
+                        <h3>🌎 América</h3>
+                        <p>✈️Nueva York, EE.UU. – La ciudad que nunca duerme.<br>
+                            ✈️Cancún, México – Playas cristalinas y ruinas mayas.<br>
+                            ✈️Río de Janeiro, Brasil – Carnaval, samba y el Cristo Redentor.<br>
+                            ✈️Buenos Aires, Argentina – Tango, cultura y gastronomía.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card text-center">
+                        <img src="img/asia.jpg" alt="Asia">
+                        <h3>🌏 Asia</h3>
+                        <p>✈️Tokio, Japón – Tecnología, tradición y gastronomía única.<br>
+                            ✈️Bangkok, Tailandia – Templos impresionantes y playas exóticas.<br>
+                            ✈️Dubái, Emiratos Árabes – Lujo y rascacielos en el desierto.<br>
+                            ✈️Nueva Delhi, India – Color, historia y espiritualidad.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card text-center">
+                        <img src="img/africa.jpg" alt="África y Oceanía">
+                        <h3>🌍 África y Oceanía</h3>
+                        <p>✈️Ciudad del Cabo, Sudáfrica – Naturaleza, safaris y montañas.<br>
+                            ✈️El Cairo, Egipto – Pirámides, esfinges y el Nilo.<br>
+                            ✈️Sídney, Australia – Ópera icónica y playas increíbles.<br>
+                            ✈️Auckland, Nueva Zelanda – Paisajes de película y aventura.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container py-4">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="mb-0">&copy; 2025 Travel+ | Todos los derechos reservados <br>
+                    1999-2025, Travel+.COM MÉXICO, S.A. DE C.V. LLAMA AL: 01800-801-7700.
+                </p>
+                <div class="social-icons mt-3 mt-md-0">
+                    <a href="https://www.facebook.com" target="_blank" class="me-3">
+                        <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/facebook.svg" alt="Facebook" width="30" height="30">
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" class="me-3">
+                        <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/twitter.svg" alt="Twitter" width="30" height="30">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="me-3">
+                        <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/instagram.svg" alt="Instagram" width="30" height="30">
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" class="me-3">
+                        <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/linkedin.svg" alt="LinkedIn" width="30" height="30">
+                    </a>
+                    <a href="https://www.youtube.com" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/youtube.svg" alt="YouTube" width="30" height="30">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

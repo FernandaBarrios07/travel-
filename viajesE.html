@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel+ | Trips</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <style>
+        .navbar {
+            background: rgba(0, 0, 0, 0.8);
+        }
+        .navbar-nav .nav-link {
+            color: white !important;
+            font-weight: bold;
+        }
+        .nav-item:hover .nav-link {
+            color: #ec46ac !important;
+        }
+        .section {
+            padding: 80px 0;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .underline {
+            width: 80px;
+            height: 5px;
+            background-color: #00b894;
+            border: none;
+            margin: 15px auto;
+        }
+        .card {
+            border: 2px solid #008f68;
+            border-radius: 15px;
+            padding: 30px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .card h3 {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #333;
+        }
+        .card p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+        .large-text {
+            font-size: 1.4rem;
+        }
+        @media (max-width: 768px) {
+            .section h2 {
+                font-size: 2rem;
+            }
+            .card h3 {
+                font-size: 1.5rem;
+            }
+            .card p {
+                font-size: 1rem;
+            }
+            .large-text {
+                font-size: 1.2rem;
+            }
+        }
+        .social-icons a {
+            text-decoration: none;
+        }
+        .language-dropdown {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white" href="#">Travel+</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" id="nav-home" href="indexE.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" id="nav-register" href="registroE.html">Register Trip</a></li>
+                    <li class="nav-item"><a class="nav-link" id="nav-trips" href="promocionesE.html">Promotions</a></li>
+                    <li class="nav-item"><a class="nav-link" id="nav-contact" href="contactoE.html">Contact Us</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="nav-more" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">More</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a class="nav-link" id="nav-about" href="aboutE.html">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link" id="nav-perfumes" href="http://aurafragance.infy.uk/">Perfumes</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Language</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="viajes.html" onclick="changeLanguage('es')">Spanish</a></li>
+                            <li><a class="dropdown-item" href="viajesE.html" onclick="changeLanguage('en')">English</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="section">
+        <div class="container">
+            <h2>TRIPS</h2>
+            <hr class="underline">
+            <p class="text-center text-muted large-text">Explore the most fascinating destinations in the world with our exclusive offers. <br>
+                From vibrant European cities to exotic Caribbean beaches, we offer unforgettable travel experiences with packages designed for all tastes and budgets. <br>
+                Discover, travel, and live new adventures with Travel+!</p>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card text-center">
+                        <img src="img/europa.jpg" alt="Europe">
+                        <h3>🌍 Europe</h3>
+                        <p>✈️Paris, France - The city of love and the Eiffel Tower.<br>
+                            ✈️Rome, Italy - History and art in every corner. <br>
+                            ✈️Barcelona, Spain - Architecture, beach, and vibrant culture. <br>
+                            ✈️Athens, Greece - The cradle of Western civilization.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card text-center">
+                        <img src="img/america.jpeg" alt="America">
+                        <h3>🌎 America</h3>
+                        <p>✈️New York, USA – The city that never sleeps.<br>
+                            ✈️Cancun, Mexico – Crystal clear beaches and Mayan ruins.<br>
+                            ✈️Rio de Janeiro, Brazil – Carnival, samba, and Christ the Redeemer.<br>
+                            ✈️Buenos Aires, Argentina – Tango, culture, and gastronomy.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card text-center">
+                        <img src="img/asia.jpg" alt="Asia">
+                        <h3>🌏 Asia</h3>
+                        <p>✈️Tokyo, Japan – Technology, tradition, and unique cuisine.<br>
+                            ✈️Bangkok, Thailand – Impressive temples and exotic beaches.<br>
+                            ✈️Dubai, UAE – Luxury and skyscrapers in the desert.<br>
+                            ✈️New Delhi, India – Color, history, and spirituality.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card text-center">
+                        <img src="img/africa.jpg" alt="Africa and Oceania">
+                        <h3>🌍 Africa and Oceania</h3>
+                        <p>✈️Cape Town, South Africa – Nature, safaris, and mountains.<br>
+                            ✈️Cairo, Egypt – Pyramids, sphinxes, and the Nile.<br>
+                            ✈️Sydney, Australia – Iconic opera house and amazing beaches.<br>
+                            ✈️Auckland, New Zealand – Movie-like landscapes and adventure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container py-4">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="mb-0">&copy; 2025 Travel+ | All rights reserved <br>
+                    1999-2025, Travel+.COM MÉXICO, S.A. DE C.V. CALL: 01800-801-7700.
+                </p>
+                <div class="social-icons mt-3 mt-md-0">
+                    <a href="https://www.facebook.com" target="_blank" class="me-3">
+                        <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/facebook.svg" alt="Facebook" width="30" height="30">
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" class="me-3">
+                        <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/twitter.svg" alt="Twitter" width="30" height="30">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="me-3">
+                        <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/instagram.svg" alt="Instagram" width="30" height="30">
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" class="me-3">
+                        <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/linkedin.svg" alt="LinkedIn" width="30" height="30">
+                    </a>
+                    <a href="https://www.youtube.com" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/youtube.svg" alt="YouTube" width="30" height="30">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const translations = {
+            es: {
+                tripsTitle: "VIAJES",
+                tripsDescription: "Descubre nuestras mejores ofertas y paquetes exclusivos para tu próximo viaje. <br>Aprovecha descuentos especiales en destinos de ensueño, experiencias inolvidables y servicios premium diseñados para hacer de tu viaje una aventura única. <br>¡Reserva ahora y viaja al mejor precio!",
+                navHome: "Página de Inicio",
+                navTrips: "Viajes",
+                navRegister: "Registrar Viaje",
+                navContact: "Contáctanos",
+                navMore: "Más",
+                navAbout: "Acerca de",
+                language: "Idioma"
+            },
+            en: {
+                tripsTitle: "TRIPS",
+                tripsDescription: "Discover our best offers and exclusive packages for your next trip. <br>Take advantage of special discounts on dream destinations, unforgettable experiences, and premium services designed to make your trip a unique adventure. <br>Book now and travel at the best price!",
+                navHome: "Home",
+                navTrips: "Trips",
+                navRegister: "Register Trip",
+                navContact: "Contact Us",
+                navMore: "More",
+                navAbout: "About Us",
+                language: "Language"
+            }
+        };
+
+        function changeLanguage(lang) {
+            document.getElementById('trips-title').innerText = translations[lang].tripsTitle;
+            document.getElementById('trips-description').innerHTML = translations[lang].tripsDescription;
+            document.getElementById('nav-home').innerText = translations[lang].navHome;
+            document.getElementById('nav-trips').innerText = translations[lang].navTrips;
+            document.getElementById('nav-register').innerText = translations[lang].navRegister;
+            document.getElementById('nav-contact').innerText = translations[lang].navContact;
+            document.getElementById('nav-more').innerText = translations[lang].navMore;
+            document.getElementById('nav-about').innerText = translations[lang].navAbout;
+            document.getElementById('languageDropdown').innerText = translations[lang].language;
+        }
+    </script>
+</body>
+</html>

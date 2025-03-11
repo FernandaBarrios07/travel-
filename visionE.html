@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel+ | About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <style>
+        .navbar {
+            background: rgba(0, 0, 0, 0.8);
+        }
+        .navbar-nav .nav-link {
+            color: white !important;
+            font-weight: bold;
+        }
+        .nav-item:hover .nav-link {
+            color: #ec46ac !important;
+        }
+        .hero {
+            background: url('img/acerca.png') no-repeat center center/cover;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .hero p {
+            font-size: 1.2rem;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+        .section-title {
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 50px;
+        }
+        .underline {
+            width: 60px;
+            height: 4px;
+            background-color: #008f68;
+            border: none;
+            margin: 10px auto;
+        }
+        .social-icons a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white" href="#">Travel+</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="indexE.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="viajesE.html">Trips</a></li>
+                    <li class="nav-item"><a class="nav-link" href="promocionesE.html">Promotions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="registroE.html">Register Trip</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactoE.html">Contact Us</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a class="nav-link" id="nav-perfumes" href="http://aurafragance.infy.uk/">Perfumes</a></li>
+
+                            <li class="nav-item"><a class="dropdown-item" href="misionE.html">Mission</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Language</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="vision.html" onclick="changeLanguage('es')">Spanish</a></li>
+                            <li><a class="dropdown-item" href="viajesE.html" onclick="changeLanguage('en')">English</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>About Travel+</h1>
+            <hr class="underline">
+            <p>Discover our mission and vision</p>
+        </div>
+    </section>
+
+    <section id="vision" class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <h2 class="section-title">Our Vision</h2>
+                <hr class="underline">
+                <p>At Travel+, we aspire to be the world's leading travel agency, providing unforgettable and personalized travel experiences for every client. We strive to innovate in the tourism industry, using cutting-edge technology and exclusive services to ensure the utmost satisfaction and comfort of our travelers.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="img/vision.jpg" class="img-fluid rounded shadow" alt="Travel+ Vision">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container py-4">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="mb-0">&copy; 2025 Travel+ | All rights reserved <br>
+                    1999-2025, Travel+.COM MÉXICO, S.A. DE C.V. CALL: 01800-801-7700.
+                </p>
+                <div class="social-icons mt-3 mt-md-0">
+                    <a href="https://www.facebook.com" target="_blank" class="me-3">
+                        <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/facebook.svg" alt="Facebook" width="30" height="30">
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" class="me-3">
+                        <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/twitter.svg" alt="Twitter" width="30" height="30">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="me-3">
+                        <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/instagram.svg" alt="Instagram" width="30" height="30">
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" class="me-3">
+                        <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/linkedin.svg" alt="LinkedIn" width="30" height="30">
+                    </a>
+                    <a href="https://www.youtube.com" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/youtube.svg" alt="YouTube" width="30" height="30">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
